@@ -25,7 +25,7 @@ function Board({ xIsNext, squares, onPlay }) {
 		} else {
 			newSquares[pos] = "O";
 		}
-		onPlay(nextSquares);
+		onPlay(newSquares);
 	}
 
 	return (
