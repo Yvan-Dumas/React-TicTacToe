@@ -33,8 +33,11 @@ body {
 
 	background: var(--btn-color);
     
-    width: 8rem;
-    height: 8rem;
+    width: 25vw;      /* 25% de la largeur de l'écran */
+    height: 25vw;     /* Garde un aspect carré */
+    max-width: 100px; /* Mais ne dépasse jamais 100px sur grand écran */
+    max-height: 100px;
+    font-size: clamp(2rem, 10vw, 4rem);
 
     border: 0.2rem solid var(--border-color);
 	border-radius: 0.5rem;
@@ -54,6 +57,8 @@ body {
     border-radius: 1.5rem;
     overflow: hidden;
 	margin-bottom: 1rem;
+
+    max-width: 90vw;
 }
 
 .status {
@@ -73,16 +78,16 @@ body {
 .game-title {
     font-size: 3rem;
     color: #333;
+    font-weight: bold;
+    text-align: center;
 }
 
 .game {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-}
-
-.game-board {
-    margin-right: 5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
 }
 
 button{
@@ -106,5 +111,6 @@ button:hover {
 @media (min-width: 600px) {
     .game {
         flex-direction: row;
+        align-items: flex-start;
     }
 }
