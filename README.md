@@ -17,4 +17,6 @@ A modern Tic-Tac-Toe game built with React. This project was an exercise to unde
 
 ## Technologies used
 - React
-- CSS
+- CSS (Flexbox & CSS grid)
+- Build tool : Vite
+- Deployed using gh-pages
